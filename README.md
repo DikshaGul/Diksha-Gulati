@@ -1,4 +1,5 @@
 **SeeColors**
+
 SeeColors is a Python-based project where I explore how to extract and understand colors from images.
 The project focuses on reading pixel-level RGB values from images and converting them into meaningful, human-readable color names.
 Over time, it is being extended to analyze dominant colors in an image and work towards better color accessibility.
