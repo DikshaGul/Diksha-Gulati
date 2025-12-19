@@ -36,6 +36,11 @@ Extracted dominant colors from images and identified their names
 
 Started aligning the project towards color accessibility use cases
 
+Analyzed color brightness (light / medium / dark) to support future visibility warnings
+
+Laid the groundwork for flagging low-visibility or hard-to-distinguish colors
+
+
 **Tech Stack Used**
 
 Python
