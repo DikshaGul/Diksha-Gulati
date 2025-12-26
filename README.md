@@ -1,8 +1,8 @@
 **SeeColors**
 
 SeeColors is a Python-based project where I explore how to extract and understand colors from images.
-The project focuses on reading pixel-level RGB values from images and converting them into meaningful, human-readable color names.
-Over time, it is being extended to analyze dominant colors in an image, evaluate color contrast and brightness, and move toward building features that support better color accessibility.
+The project focuses on extracting pixel-level RGB values from images and converting them into meaningful, human-readable color names
+The project goes beyond basic color extraction by analyzing dominant colors, evaluating brightness and contrast, and translating these metrics into accessibility-focused insights.
 This project is part of my learning journey in Python, image processing, and practical problem-solving.
 
 **What the Project Does**
@@ -25,7 +25,7 @@ Analyzes brightness levels of colors (light / medium / dark)
 
 Computes contrast between colors to identify low-visibility combinations
 
-**Current Progress**
+**Implemented Features**
 
 Successfully loaded user-uploaded images and displayed them
 
@@ -37,24 +37,36 @@ Handled images with transparency (RGBA → RGB conversion)
 
 Mapped RGB values to the closest CSS3 color names
 
-Extracted dominant colors from images and identified their names
+Extracted dominant colors from images using clustering techniques
 
-Started aligning the project towards color accessibility use cases
+Visualized dominant color palettes extracted from images
 
-Analyzed color brightness (light / medium / dark) to support future visibility warnings
+Analyzed color brightness (light / medium / dark) to assess visibility
 
-Laid the groundwork for flagging low-visibility or hard-to-distinguish colors
+Computed contrast ratios between dominant colors to detect low-contrast combinations
+
+Generated per-color visibility warnings with actionable improvement suggestions
+
+Simulated color vision deficiencies (Protanopia and Deuteranopia) for accessibility analysis
+
+Produced structured accessibility summaries and reports from image colors
+
+
+_Accessibility Features_
+
+- Detects low-contrast color combinations using contrast ratio analysis  
+- Classifies colors by brightness to identify visibility risks  
+- Generates per-color visibility warnings and improvement suggestions  
+- Simulates how images appear under common color vision deficiencies (Protanopia, Deuteranopia)  
+- Produces a structured accessibility report from dominant image colors
+
 
 _Accessibility Direction_
 
-Identifying color combinations that may be difficult to distinguish due to low contrast
-
-Using brightness and contrast metrics as early indicators for accessibility issues
-
-Planning to extend this work toward color-blind perception simulation and safer color recommendations
-
-Recent updates focus on moving from basic color identification to understanding color usability, laying the foundation for future accessibility warnings and design-focused insights.
-
+- Expanding color-blind simulation to additional vision deficiency types  
+- Suggesting safer alternative colors based on contrast and brightness analysis  
+- Converting accessibility insights into user-facing warnings and recommendations  
+- Exploring accessibility-focused design feedback for images and UI elements
 
 **Tech Stack Used**
 
@@ -84,5 +96,13 @@ Work towards building features useful for color-blind accessibility
 
 Apply accessibility-related concepts (contrast, visibility) to real image data rather than theoretical examples
 
+**Why This Project**
+
+This project was built to bridge the gap between raw image color data and real-world usability.
+Instead of stopping at color identification, SeeColors focuses on whether colors are distinguishable, readable, and accessible — especially for users with color vision differences.
+It reflects a shift from purely technical output to user-centered analysis.
+
+
 **Status**
-Project is under active learning and continuous development, with incremental feature additions and regular experimentation.
+Core functionality completed.
+The project now serves as a foundation for accessibility-focused color analysis, with future improvements planned around UI integration, deployment, and usability enhancements.
